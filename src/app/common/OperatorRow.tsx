@@ -1,23 +1,26 @@
 "use client";
 
+import { combinedName, convertedPercent } from "@/utils/helpers";
 import { Operator } from "@/utils/types";
 import { Button, Stack, Typography, Chip } from "@mui/material";
 
 export const OperatorRow = ({ operator }: { operator: Operator }) => {
-  const fullName = `${operator.firstName} ${operator.lastName}`;
-  const reliabilityPercent = Math.round(operator.reliability * 100);
-
   return (
     <Stack direction="row" alignItems="center" justifyContent="space-between">
       <Stack spacing={0.5}>
-        <Typography variant="subtitle1">{fullName}</Typography>
+        <Typography variant="subtitle1">
+          {combinedName(operator.firstName, operator.lastName)}
+        </Typography>
 
         <Stack direction="row" spacing={1} flexWrap="wrap">
           <Chip
-            label={`Ops Completed: ${operator.opsCompleted}`}
+            label={`Operations Completed: ${operator.opsCompleted}`}
             size="small"
           />
-          <Chip label={`Reliability: ${reliabilityPercent}%`} size="small" />
+          <Chip
+            label={`Reliability: ${convertedPercent(operator.reliability)}%`}
+            size="small"
+          />
         </Stack>
 
         <Typography variant="body2" color="text.secondary">

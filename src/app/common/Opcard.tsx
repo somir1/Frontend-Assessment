@@ -21,9 +21,6 @@ type OpCardProps = {
 };
 
 export const OpCard = ({ op }: OpCardProps) => {
-  const startTime = formatTime(op.startTime);
-  const endTime = formatTime(op.endTime);
-
   return (
     <Accordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -45,7 +42,7 @@ export const OpCard = ({ op }: OpCardProps) => {
               Start / End
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {startTime} – {endTime}
+              {formatTime(op.startTime)} – {formatTime(op.endTime)}
             </Typography>
           </Box>
 
