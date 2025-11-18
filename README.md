@@ -32,6 +32,8 @@ Just adding a summary for things I worked through and a few ideas I would improv
 6. I would also go through the code and see what else I clean up for example make the api call its hook. and import it in.
 7. Add in unit testing
 
+---
+
 ### **Extra Notes**
 
 If api link is down with a error code of `500` use the `opData` array which is a copy of the data that return from the api.
