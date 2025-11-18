@@ -14,13 +14,9 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import type { Op } from "@/utils/types";
 import { OperatorRow } from "../common/OperatorRow";
-import { formatDate, formatTime } from "@/utils/helpers";
+import { formatTime } from "@/utils/helpers";
 
-type OpCardProps = {
-  op: Op;
-};
-
-export const OpCard = ({ op }: OpCardProps) => {
+export const OpCard = ({ op }: { op: Op }) => {
   return (
     <Accordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>

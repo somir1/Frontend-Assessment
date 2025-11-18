@@ -13,15 +13,20 @@ type HomeProps = {
 
 export const Home = ({ ops, loading, error }: HomeProps) => {
   return (
-    <Container sx={{ py: 4 }}>
+    <Container sx={{ py: 8 }}>
       <Stack
-        direction={{ xs: "column", sm: "row" }}
+        direction={{ sm: "row" }}
         justifyContent="space-between"
-        alignItems={{ xs: "flex-start", sm: "center" }}
-        spacing={1}
-        sx={{ mb: 2 }}
+        sx={{ marginBottom: "40px" }}
       >
-        <Typography variant="h4">Veryable Frontend Challenge</Typography>
+        <img
+          src={`https://cdn.prod.website-files.com/656f7666617c2816db7ae5c9/6573259b6f073a124ae4d2dd_Veryable-Logo-Color.webp`}
+          alt="logo"
+          width={"150px"}
+        />
+        <Typography variant="h4">
+          Samir's Veryable Frontend Challenge
+        </Typography>
 
         <Typography variant="h6" color="text.secondary">
           Count: {ops.length}

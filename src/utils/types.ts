@@ -1,3 +1,5 @@
+export type Status = "in" | "out";
+
 export type Operator = {
   id: number;
   firstName: string;
