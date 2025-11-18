@@ -118,3 +118,6 @@ export const opData = [
     ],
   },
 ];
+
+export const logoUrl =
+  "https://cdn.prod.website-files.com/656f7666617c2816db7ae5c9/6573259b6f073a124ae4d2dd_Veryable-Logo-Color.webp";

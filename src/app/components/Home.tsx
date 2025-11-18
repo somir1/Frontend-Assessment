@@ -4,6 +4,7 @@ import { Container, Typography, Stack } from "@mui/material";
 
 import { HomeProps, Op } from "@/utils/types";
 import { OpCard } from "../common/Opcard";
+import { logoUrl } from "@/utils/data";
 
 export const Home = ({ ops, loading, error }: HomeProps) => {
   return (
@@ -13,11 +14,7 @@ export const Home = ({ ops, loading, error }: HomeProps) => {
         justifyContent="space-between"
         sx={{ marginBottom: "40px" }}
       >
-        <img
-          src={`https://cdn.prod.website-files.com/656f7666617c2816db7ae5c9/6573259b6f073a124ae4d2dd_Veryable-Logo-Color.webp`}
-          alt="logo"
-          width={"150px"}
-        />
+        <img src={logoUrl} alt="logo" width={"150px"} />
         <Typography variant="h4">
           Samir's Veryable Frontend Challenge
         </Typography>
