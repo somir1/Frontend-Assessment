@@ -2,14 +2,8 @@
 
 import { Container, Typography, Stack } from "@mui/material";
 
-import { Op } from "@/utils/types";
+import { HomeProps, Op } from "@/utils/types";
 import { OpCard } from "../common/Opcard";
-
-type HomeProps = {
-  ops: Op[];
-  loading: boolean;
-  error: string | null;
-};
 
 export const Home = ({ ops, loading, error }: HomeProps) => {
   return (

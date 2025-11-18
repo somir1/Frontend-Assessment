@@ -1,5 +1,11 @@
 export type Status = "in" | "out";
 
+export type HomeProps = {
+  ops: Op[];
+  loading: boolean;
+  error: string | null;
+};
+
 export type Operator = {
   id: number;
   firstName: string;
