@@ -1,6 +1,10 @@
 import { ThemeProvider } from "@/theme/ThemeProvider";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 
+export const metadata = {
+  title: "Samirs Frontend Assesment",
+};
+
 export default function RootLayout({
   children,
 }: {
